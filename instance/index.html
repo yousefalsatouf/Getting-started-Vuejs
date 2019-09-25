@@ -4,7 +4,11 @@
         <title>VueJs-instance</title>
     </head>
     <body>
-       
+       <div id="app">
+            <p>{{ foo }}</p>
+            <!-- this will no longer update `foo`! -->
+            <button v-on:click="foo = 'baz'">Change it</button>
+        </div>
         <script src="js/vue.js"></script>
         <script src="js/main.js"></script>
     </body>
